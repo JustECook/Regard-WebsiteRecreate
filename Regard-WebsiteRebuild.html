@@ -22,22 +22,77 @@
             justify-content: center;
             align-items: center;
         }
-        .doctor.cont {
-            display: block;
-            width: 50vw;
-            height: 65vh;
-            overflow: hidden;
+        .circle {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: rgb(133, 132, 132) solid 1px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .collab-sect {
+            width: 100vw;
+            height: 5vh;
+            background: white;
+            padding-top: 20vh;
+        }
+        .collab-logo-cont {
+            width: 80vw;
+            height: 8vh;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .cost-sect {
+            width: 100vw;
+            height: 160vh;
+            background: #e6ecef;
+        }
+        .diagNum {
+            color: rgb(75, 26, 188);
+        }
+        .diagNumText {
+            position: relative;
+            top: -8vh;
         }
         .doctor-img {
-            width: 100%;
+            position: relative;
+            top: 22px;
+            height: 70vh;
+            max-width: 75vw;  
+        }
+        .doc2-img {
+            position: relative;
+            top:30vh;
+            height: 400px;
+            width: auto;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .grey {
+            background: rgb(213, 213, 213);
         }
         h1 {
             font-size: 4em;
         }
+        .halfcircle {
+            background: rgb(241, 241, 174);
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+            z-index: 5;
+        }
+        .logos {
+            max-width: 100%;
+            max-height: 100%;
+        }
         .main-sect {
             width: 100vw;
             height: 70vh;
-            background: blue;
+            background: rgb(75, 26, 188);
         }
         .main-sect-cont {
             margin-left: 5vw;
@@ -50,16 +105,18 @@
             color: white;
         }
         .navBar-cont {
-            width: 30vw;
+            width: 35vw;
         }
         .nav-sect {
             width: 100vw;
             height: 15vh;
+            background: white
         }
         .nav-sect-cont {
             margin-left: 5vw;
             margin-right: 5vw;
             height: 15vh;
+            z-index: 2;
         }
         .orange-btn {
             padding: 15px;
@@ -67,7 +124,7 @@
             border-top-right-radius: 25px;
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
-            background: orange;
+            background: rgb(219, 106, 0);
             border: white;
             color: white;
         }
@@ -93,6 +150,9 @@
             justify-content: space-between;
             align-items: center;
         }
+        .white {
+            background: rgb(133, 133, 133);
+        }
         .white-btn {
             padding: 15px;
             border-top-left-radius: 25px;
@@ -103,6 +163,7 @@
             border: blue;
             color: blue;
         }
+        
     </style>
 <body>
     <div class = "nav-sect">
@@ -110,7 +171,7 @@
             <div>
                 <img src = "images/logo.svg">
             </div>
-            <div class = "separated navBar-cont">
+            <div class = "spaced navBar-cont">
                 <button class = "plain-btn">About</button>
                 <button class = "plain-btn">Team</button>
                 <button class = "plain-btn">Careers</button>
@@ -129,6 +190,31 @@
             <div class = "doctor-cont">
                 <img class = "doctor-img" src = "doctor.png">
             </div>
+        </div>
+    </div>
+    <div class = "collab-sect column">
+        <div class = "collab-logo-cont spaced">
+            <img class = "logos" src = "images/leftArrow.svg">
+            <img class = "logos" src = "images/cedars-logo.png">
+            <img class = "logos" src = "images/penn-logo.png">
+            <img class = "logos" src = "images/penn-med-logo.svg">
+            <img class = "logos" src = "images/saintLuke-logo.svg">
+            <img class = "logos" src = "images/rightArrow.svg">
+        </div>
+        <br>
+        <div class = "centered">
+            <div class = "circle grey"></div>
+            <div class = "circle white"></div>
+        </div>
+        <div class = "centered column">
+            <h1 class = "diagNum">676,876</h1>
+            <p class = "diagNumText">Medical conditions diagnosed by Regard</p>
+        </div>
+    </div>
+    <img class = "doc2-img" src = "images/anotherDoctor.jpg">
+    <div class = "cost-sect">
+        <div class = "halfcircle-cont">
+            <div class = "halfcircle"></div>
         </div>
     </div>
 </body>
