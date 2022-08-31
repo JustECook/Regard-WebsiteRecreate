@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+            font-size: 20px;
+        }
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .doctor.cont {
+            display: block;
+            width: 50vw;
+            height: 65vh;
+            overflow: hidden;
+        }
+        .doctor-img {
+            width: 100%;
+        }
+        h1 {
+            font-size: 4em;
+        }
+        .main-sect {
+            width: 100vw;
+            height: 70vh;
+            background: blue;
+        }
+        .main-sect-cont {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            height: 65vh;
+        }
+        .main-text {
+            width: 75vw;
+            height: 70vh;
+            color: white;
+        }
+        .navBar-cont {
+            width: 30vw;
+        }
+        .nav-sect {
+            width: 100vw;
+            height: 15vh;
+        }
+        .nav-sect-cont {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            height: 15vh;
+        }
+        .orange-btn {
+            padding: 15px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background: orange;
+            border: white;
+            color: white;
+        }
+        .orange-btn:hover {
+            background: rgb(199, 130, 2);
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .plain-btn {
+            background: white;
+            color: blue;
+            border: white;
+            text-decoration: underline .15em rgba(0, 0, 255, 0);
+            transition: text-decoration-color 300ms;
+        }
+        .plain-btn:hover {
+            text-decoration-color: rgba(0, 0, 225, 1);
+        }
+        
+        .spaced {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .white-btn {
+            padding: 15px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background: white;
+            border: blue;
+            color: blue;
+        }
+    </style>
+<body>
+    <div class = "nav-sect">
+        <div class = "nav-sect-cont spaced">
+            <div>
+                <img src = "images/logo.svg">
+            </div>
+            <div class = "separated navBar-cont">
+                <button class = "plain-btn">About</button>
+                <button class = "plain-btn">Team</button>
+                <button class = "plain-btn">Careers</button>
+                <button class = "orange-btn">Demo</button>
+            </div>
+        </div>
+    </div>
+    <div class = "main-sect">
+        <div class = "main-sect-cont spaced">
+            <div class = "main-text">
+                <h1>Bringing medicine into the modern era</h1>
+                <p>Designed with clinical workflows in mind, Regard analyzes and synthesizes patient data, recommends diagnoses, automates note taking, and captures missed revenue.</p>
+                <p>Our system tackles repetitive tasks so you can focus on what matters most: advancing healthcare.</p>
+                <button class = "white-btn">Learn More</button>
+            </div>
+            <div class = "doctor-cont">
+                <img class = "doctor-img" src = "doctor.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
